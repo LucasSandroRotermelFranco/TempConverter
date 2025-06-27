@@ -26,4 +26,5 @@ jobs:
             - name: Set Gradle Permission
               uses: ./.github/actions/permission_gradlew_action
 
-            - run: ./gradlew build
+            - name: Build Project
+              uses: ./.github/actions/build_action
