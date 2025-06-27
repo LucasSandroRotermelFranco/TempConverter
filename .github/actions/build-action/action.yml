@@ -1,0 +1,10 @@
+name: Build
+description: "Action para realizar build de projeto Java"
+
+runs:
+  using: "composite"
+  steps:
+    - name: Diga Ola
+      run: ./gradlew build
+      shell: bash
+
