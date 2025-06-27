@@ -1,0 +1,9 @@
+name: Build Project
+descriptionÇ "Builda o projeto Java"
+
+runs:
+  using: "composite"
+  steps:
+    - name: Build
+      run: ./gradlew Build
+      shell: bash
