@@ -2,7 +2,7 @@ name: Build
 on:
     push:
         branches:
-            - main
+            - TestAction
 jobs:              
     DigaOla:
         runs-on: ubuntu-latest
@@ -24,6 +24,7 @@ jobs:
               uses: gradle/actions/setup-gradle@v4
 
             - name: Set Gradle Permission
-              run: chmod +x ./gradlew
+              uses: ./.github/actions/set-permission-action
 
-            - run: ./gradlew build
+            - name: Build Project
+              uses: ./.github/actions/build-action
