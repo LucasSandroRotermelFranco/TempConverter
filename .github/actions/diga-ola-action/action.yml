@@ -2,5 +2,5 @@ name: DigaOla
 description: "Action para printar Ola no console"
 
 runs:
-  - name: Diga Ola
+  - name: "Diga Ola"
     run: echo "Ola"
