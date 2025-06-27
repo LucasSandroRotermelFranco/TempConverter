@@ -1,5 +1,5 @@
 name: Build Project
-descriptionÇ "Builda o projeto Java"
+description: "Builda o projeto Java"
 
 runs:
   using: "composite"
