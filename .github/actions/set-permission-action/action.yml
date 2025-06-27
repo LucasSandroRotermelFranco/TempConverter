@@ -1,0 +1,10 @@
+name: SetPermission
+description: "Action para configurar permissão de acesso ao gradle"
+
+runs:
+  using: "composite"
+  steps:
+    - name: Diga Ola
+      run: chmod +x ./gradlew
+      shell: bash
+
